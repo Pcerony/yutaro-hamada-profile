@@ -25,20 +25,19 @@
       <p class="reading">はまだ ゆうたろう</p>
       <h1 id="name">濱田祐太郎</h1>
       <p class="hero-intro">こんにちは、濱田祐太郎です。<br>吉本興業でお笑い芸人やってます。</p>
-      <audio id="introduction-audio" src="assets/introduction.m4a" preload="metadata"></audio>
+      <audio id="introduction-audio" class="native-audio" controls src="assets/introduction.m4a" preload="metadata" aria-label="自己紹介音声" aria-describedby="audio-credit"><a href="assets/introduction.m4a">自己紹介音声を開く</a></audio>
       <div class="audio-controls" hidden id="audio-controls">
-        <button type="button" id="speak" aria-pressed="false">
+        <button type="button" id="speak" aria-describedby="audio-credit">
           <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m11 5-6 4H2v6h3l6 4V5Z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/></svg>
           <span id="speak-label">自己紹介を聴く</span>
         </button>
-        <p class="audio-note">音声：九州大学 SoDesLab 千田 尚輝</p>
       </div>
-      <p class="speech-status" id="speech-status" role="status"></p>
-      <noscript><audio controls preload="metadata" src="assets/introduction.m4a" aria-label="自己紹介音声"><a href="assets/introduction.m4a">自己紹介音声を開く</a></audio></noscript>
+      <p class="audio-note" id="audio-credit">音声：九州大学 SoDesLab 千田 尚輝</p>
+      <p class="speech-status" id="speech-status" role="status" aria-atomic="true"></p>
       <a class="more-link" href="#profile">もっと知る <span aria-hidden="true">↓</span></a>
     </section>
-    <section class="profile section" id="profile" aria-labelledby="profile-heading">
-      <div class="section-heading"><span class="section-number" aria-hidden="true">01</span><h2 id="profile-heading">プロフィール</h2><span class="english-label" lang="en">PROFILE</span></div>
+    <section class="profile section" id="profile" tabindex="-1" aria-labelledby="profile-heading">
+      <div class="section-heading"><span class="section-number" aria-hidden="true">01</span><h2 id="profile-heading">プロフィール</h2><span class="english-label" lang="en" aria-hidden="true">PROFILE</span></div>
       <p class="lead">兵庫県神戸市出身。<br>NSC大阪35期のお笑い芸人です。</p>
       <dl class="facts">
         <div><dt>名前</dt><dd>濱田祐太郎<span class="secondary">はまだ ゆうたろう</span></dd></div>
@@ -48,12 +47,12 @@
       </dl>
     </section>
     <section class="interests section" aria-labelledby="interests-heading">
-      <div class="section-heading"><span class="section-number" aria-hidden="true">02</span><h2 id="interests-heading">好きなこと、得意なこと</h2><span class="english-label" lang="en">PERSONAL</span></div>
+      <div class="section-heading"><span class="section-number" aria-hidden="true">02</span><h2 id="interests-heading">好きなこと、得意なこと</h2><span class="english-label" lang="en" aria-hidden="true">PERSONAL</span></div>
       <div class="interest-row"><h3>趣味</h3><div><p class="feature-text">ギターと、大食い。</p><p>フォークギター、アコースティックギター、<br class="desktop-break">フィンガーピッキング。</p></div></div>
       <div class="interest-row"><h3>特技</h3><div><p class="feature-text">ごはんは、好みのかたさに。</p><p>自分の好みに合わせて、ちょうどいいかたさで<br class="desktop-break">お米を炊けること。</p><p class="qualification">あんまマッサージ指圧師・針師</p></div></div>
     </section>
     <section class="introduction section" aria-labelledby="intro-heading">
-      <div class="section-heading"><span class="section-number" aria-hidden="true">03</span><h2 id="intro-heading">自己紹介</h2><span class="english-label" lang="en">HELLO</span></div>
+      <div class="section-heading"><span class="section-number" aria-hidden="true">03</span><h2 id="intro-heading">自己紹介</h2><span class="english-label" lang="en" aria-hidden="true">HELLO</span></div>
       <div id="introduction-text" class="transcript">
         <p>こんにちは、濱田祐太郎です。<br>吉本興業でお笑い芸人やってます。</p>
         <p>兵庫県神戸市出身。<br>趣味はフォークギターで、特技は自分の好みに合わせて、ちょうどいいかたさでお米を炊けること。</p>
