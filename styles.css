@@ -6,3 +6,14 @@
 @media(max-width:600px) and (max-height:740px){.hero{padding-top:14px;padding-bottom:10px}.eyebrow{margin-bottom:10px}.portrait{width:110px;margin-bottom:8px}.reading{margin-bottom:0}h1{font-size:36px}.hero-intro{margin:8px 0 12px}.more-link{margin-top:4px}.section{padding-top:24px}}
 .masthead{flex-wrap:wrap}.audio-controls button{max-width:100%}
 @media(max-width:600px) and (max-height:740px){.more-link{display:none}}
+
+/* The portrait stays intact, including the photographer's copyright mark. */
+.hero{max-width:1120px;margin:auto;padding:44px 40px 38px;display:grid;grid-template-columns:minmax(260px,360px) minmax(0,1fr);column-gap:60px;text-align:left;align-content:center}
+.portrait{grid-column:1;grid-row:1 / 9;width:100%;max-width:315px;margin:0;align-self:center;justify-self:center}
+.hero>:not(.portrait){grid-column:2}.hero .eyebrow{margin:8px 0 18px;justify-self:start;padding:4px 12px;background:#e6eee8;border-left:3px solid var(--green)}
+.hero h1{font-size:52px}.hero .reading{margin-bottom:4px}.hero-intro{margin-top:20px}.hero .more-link{justify-self:start;margin-top:14px}
+.audio-note{font-size:12px;line-height:1.9;margin-top:12px}.audio-note span{color:var(--muted)}
+.section-heading{padding:10px 14px;background:#e8efeb;border-left:3px solid var(--green);gap:12px}.interests .section-heading{background:#f6eaea;border-color:var(--red)}.introduction .section-heading{background:#fff;border-color:var(--green)}
+.section-number{font-size:13px}.section-heading h2{font-size:21px}.section-heading .english-label{font-size:10px}
+.design-credit{background:#e8eeed;border-top:1px solid var(--line);padding:38px 32px 40px}.credit-inner{max-width:816px;margin:auto;position:relative;padding-left:24px;border-left:3px solid var(--green)}.credit-label{font-size:11px;font-weight:700;color:var(--green);margin:0 0 8px}.design-credit h2{font-size:23px;line-height:1.6;margin:0 0 18px}.design-credit p:not(.credit-label){font-size:14px;margin:0;line-height:2}.design-credit strong{font-weight:650}.design-credit .credit-date{color:var(--muted);padding-top:14px}.credit-date time{margin-left:12px}
+@media(max-width:800px){.hero{display:block;text-align:center;padding:28px 22px 30px}.portrait{width:240px;max-width:100%;margin:0 auto 20px}.hero .eyebrow{display:table;margin:0 auto 20px}.hero h1{font-size:40px}.hero-intro{margin:15px 0 18px}.hero .more-link{display:inline-flex}.section-heading{padding:10px;gap:10px}.section-heading h2{font-size:18px}.design-credit{padding:30px 22px}.credit-inner{padding-left:16px}.design-credit h2{font-size:20px}.design-credit p:not(.credit-label){font-size:13px}}
