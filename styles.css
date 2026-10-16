@@ -7,7 +7,7 @@
 .masthead{flex-wrap:wrap}.audio-controls button{max-width:100%}
 @media(max-width:600px) and (max-height:740px){.more-link{display:none}}
 
-/* The portrait stays intact, including the photographer's copyright mark. */
+/* Preserve the full portrait composition at every screen size. */
 .hero{max-width:1120px;margin:auto;padding:44px 40px 38px;display:grid;grid-template-columns:minmax(260px,360px) minmax(0,1fr);column-gap:60px;text-align:left;align-content:center}
 .portrait{grid-column:1;grid-row:1 / 9;width:100%;max-width:315px;margin:0;align-self:center;justify-self:center}
 .hero>:not(.portrait){grid-column:2}.hero .eyebrow{margin:8px 0 18px;justify-self:start}
