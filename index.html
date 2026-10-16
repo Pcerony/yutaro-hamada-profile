@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="お笑い芸人・濱田祐太郎のプロフィール。兵庫県神戸市出身、NSC大阪35期。趣味や特技、音声による自己紹介をご紹介します。">
+  <meta name="theme-color" content="#fafaf8">
+  <title>濱田祐太郎 | プロフィール</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="speech.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="masthead">
+    <span class="wordmark" lang="en">YUTARO HAMADA<span class="mark" aria-hidden="true">.</span></span>
+    <a href="#profile">プロフィール <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="main" tabindex="-1">
+    <section class="hero" aria-labelledby="name">
+      <p class="eyebrow">お笑い芸人 / 吉本興業</p>
+      <figure class="portrait">
+        <img src="assets/portrait.jpg" width="315" height="420" alt="スーツ姿でほほえむ濱田祐太郎" fetchpriority="high">
+      </figure>
+      <p class="reading">はまだ ゆうたろう</p>
+      <h1 id="name">濱田祐太郎</h1>
+      <p class="hero-intro">こんにちは、濱田祐太郎です。<br>吉本興業でお笑い芸人やってます。</p>
+      <audio id="introduction-audio" src="assets/introduction.m4a" preload="metadata"></audio>
+      <div class="audio-controls" hidden id="audio-controls">
+        <button type="button" id="speak" aria-pressed="false">
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m11 5-6 4H2v6h3l6 4V5Z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/></svg>
+          <span id="speak-label">自己紹介を聴く</span>
+        </button>
+        <p class="audio-note">自己紹介音声・約23秒</p>
+      </div>
+      <p class="speech-status" id="speech-status" role="status"></p>
+      <noscript><audio controls preload="metadata" src="assets/introduction.m4a" aria-label="自己紹介音声"><a href="assets/introduction.m4a">自己紹介音声を開く</a></audio></noscript>
+      <a class="more-link" href="#profile">もっと知る <span aria-hidden="true">↓</span></a>
+    </section>
+    <section class="profile section" id="profile" aria-labelledby="profile-heading">
+      <div class="section-heading"><span class="section-number" aria-hidden="true">01</span><h2 id="profile-heading">プロフィール</h2><span class="english-label" lang="en">PROFILE</span></div>
+      <p class="lead">兵庫県神戸市出身。<br>NSC大阪35期のお笑い芸人です。</p>
+      <dl class="facts">
+        <div><dt>名前</dt><dd>濱田祐太郎<span class="secondary">はまだ ゆうたろう</span></dd></div>
+        <div><dt>生年月日</dt><dd>1989年9月8日</dd></div>
+        <div><dt>出身地</dt><dd>兵庫県神戸市</dd></div>
+        <div><dt>所属</dt><dd>吉本興業<span class="secondary">NSC大阪35期</span></dd></div>
+      </dl>
+    </section>
+    <section class="interests section" aria-labelledby="interests-heading">
+      <div class="section-heading"><span class="section-number" aria-hidden="true">02</span><h2 id="interests-heading">好きなこと、得意なこと</h2><span class="english-label" lang="en">PERSONAL</span></div>
+      <div class="interest-row"><h3>趣味</h3><div><p class="feature-text">ギターと、大食い。</p><p>フォークギター、アコースティックギター、<br class="desktop-break">フィンガーピッキング。</p></div></div>
+      <div class="interest-row"><h3>特技</h3><div><p class="feature-text">ごはんは、好みのかたさに。</p><p>自分の好みに合わせて、ちょうどいいかたさで<br class="desktop-break">お米を炊けること。</p><p class="qualification">あんまマッサージ指圧師・針師</p></div></div>
+    </section>
+    <section class="introduction section" aria-labelledby="intro-heading">
+      <div class="section-heading"><span class="section-number" aria-hidden="true">03</span><h2 id="intro-heading">自己紹介</h2><span class="english-label" lang="en">HELLO</span></div>
+      <div id="introduction-text" class="transcript">
+        <p>こんにちは、濱田祐太郎です。<br>吉本興業でお笑い芸人やってます。</p>
+        <p>兵庫県神戸市出身。<br>趣味はフォークギターで、特技は自分の好みに合わせて、ちょうどいいかたさでお米を炊けること。</p>
+        <p>全国放送の冠番組MCしたいんで、<br>オファー待ってます〜。</p>
+      </div>
+    </section>
+  </main>
+  <footer><span lang="en">YUTARO HAMADA</span><p>ユニバーサルデザインの取り組みから生まれた<br>プレゼント用プロフィールページ</p><a href="#main">ページの先頭へ <span aria-hidden="true">↑</span></a></footer>
+</body>
+</html>
